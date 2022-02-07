@@ -3,9 +3,7 @@ import {
   ArrowNarrowUpIcon,
 } from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
-import { useEffect, useState } from 'react'
-
-const OnlineSales = dynamic(() => import('./graphs/onlineSales'))
+import OnlineSales from './graphs/onlineSales'
 
 const TotalOnlineVisitors = () => {
   return (
