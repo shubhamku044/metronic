@@ -7,7 +7,7 @@ const passwordReset = () => {
     <div className="">
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-[51rem] xl:w-[61rem]">
-          {process.browser && <Aside />}
+          <Aside />
         </div>
         <div className="w-full py-4">
           <div className="">

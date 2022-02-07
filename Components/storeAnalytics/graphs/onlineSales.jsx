@@ -49,16 +49,14 @@ class OnlineSales extends Component {
       <div>
         <div>
           <div>
-            {process.browser && (
-              <Chart
-                options={this.state.options}
-                series={this.state.series}
-                type="line"
-                width="100%"
-                height="200"
-                curver="smooth"
-              />
-            )}
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="line"
+              width="100%"
+              height="200"
+              curver="smooth"
+            />
           </div>
         </div>
       </div>

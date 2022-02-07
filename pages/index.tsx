@@ -19,7 +19,7 @@ export default function Home() {
         <Toolbar title={'Store Analytics'} />
         <div className="bg-white">
           <section className="mx-auto max-w-6xl px-4">
-            {process.browser && <StoreAnalytics />}
+            <StoreAnalytics />
           </section>
         </div>
       </main>
