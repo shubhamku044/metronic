@@ -30,9 +30,7 @@ const TotalOnlineSales = () => {
             Total Online Sales
           </p>
         </div>
-        <div>
-          <OnlineSales />
-        </div>
+        <div>{/* <OnlineSales /> */}</div>
       </div>
       <div className="max-h-60 rounded-lg border bg-gray-50">
         <div className="px-8 py-6">
