@@ -4,16 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .headerBtn {
-    @apply h-5 w-5 opacity-60 transition-all duration-200 group-hover:text-green-500
-       group-hover:opacity-90 lg:h-6 lg:w-6;
-  }
-  .headerBtn-container {
-    @apply cursor-pointer rounded-md border p-1 hover:bg-slate-200;
-  }
-}
-
 body {
   font-family: 'Poppins', 'sans-serif';
 }

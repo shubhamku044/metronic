@@ -31,7 +31,7 @@ const HeaderTop = () => {
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <div className="headerBtn-container group flex border-gray-300">
+          <div className="group flex cursor-pointer rounded-md border border-gray-300 p-1 hover:bg-slate-200">
             <SearchIcon className="headerBtn" />
             <input
               type="text"
@@ -39,14 +39,23 @@ const HeaderTop = () => {
               placeholder="Quick Search"
             />
           </div>
-          <div className="headerBtn-container group">
-            <ChartBarIcon className="headerBtn" />
+          <div className="group cursor-pointer rounded-md border p-1 hover:bg-slate-200">
+            <ChartBarIcon
+              className="h-5 w-5 opacity-60 transition-all duration-200 group-hover:text-green-500
+       group-hover:opacity-90 lg:h-6 lg:w-6"
+            />
           </div>
-          <div className="headerBtn-container group">
-            <SunIcon className="headerBtn" />
+          <div className="group cursor-pointer rounded-md border p-1 hover:bg-slate-200">
+            <SunIcon
+              className="h-5 w-5 opacity-60 transition-all duration-200 group-hover:text-green-500
+       group-hover:opacity-90 lg:h-6 lg:w-6"
+            />
           </div>
-          <div className="headerBtn-container group">
-            <UserIcon className="headerBtn" />
+          <div className="group cursor-pointer rounded-md border p-1 hover:bg-slate-200">
+            <UserIcon
+              className="h-5 w-5 opacity-60 transition-all duration-200 group-hover:text-green-500
+       group-hover:opacity-90 lg:h-6 lg:w-6"
+            />
           </div>
           <div className="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded-md border bg-green-400 hover:bg-green-500 lg:h-[34px] lg:w-[34px]">
             <span className="text-sm font-semibold text-white lg:text-base">

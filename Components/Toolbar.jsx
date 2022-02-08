@@ -19,7 +19,7 @@ const Toolbar = ({ title }) => {
               <span>Filter</span>
             </div>
           </button>
-          <button className="rounded-md bg-green-400 px-4 py-2 font-medium text-gray-50 transition-all duration-200 hover:bg-green-500 hover:text-gray-50">
+          <button className="rounded-md bg-green-400 px-4 py-2 font-medium text-gray-100 transition-all duration-200 hover:bg-green-500 hover:text-gray-50">
             Show
           </button>
         </div>
