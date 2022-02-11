@@ -32,7 +32,10 @@ const HeaderTop = () => {
         </div>
         <div className="flex items-center space-x-4">
           <div className="group flex cursor-pointer rounded-md border border-gray-300 p-1 hover:bg-slate-200">
-            <SearchIcon className="headerBtn" />
+            <SearchIcon
+              className="h-5 w-5 opacity-60 transition-all duration-200 group-hover:text-green-500
+       group-hover:opacity-90 lg:h-6 lg:w-6"
+            />
             <input
               type="text"
               className="hidden bg-transparent px-4 text-xs font-medium tracking-wider text-gray-800 placeholder:text-gray-400 focus:outline-none sm:block"
