@@ -23,7 +23,7 @@ const HeaderTop = () => {
             onClick={() => router.push('/')}
           >
             <Image
-              src={`/logos/logo-demo11.svg`}
+              src={`/logos/platfawn.svg`}
               objectFit="contain"
               layout="fill"
               className=""

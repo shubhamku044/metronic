@@ -2,23 +2,23 @@ import Image from 'next/image'
 
 const Aside = () => {
   return (
-    <div className="bg-[#F2C98A] lg:fixed lg:top-0 lg:left-0 lg:flex lg:min-h-screen lg:w-[30rem] lg:items-center lg:justify-center xl:w-[36rem]">
+    <div className="bg-[#f1c5a8] lg:fixed lg:top-0 lg:left-0 lg:flex lg:min-h-screen lg:w-[30rem] lg:items-center lg:justify-center xl:w-[36rem]">
       <div className="">
         <div className="">
           <div className="space-y-8 py-8">
             <div className="flex justify-center">
               <Image
-                src={`/logos/logo-2.svg`}
-                width={80}
-                height={52}
+                src={`/logos/platfawn-logo.png`}
+                width={120}
+                height={72}
                 objectFit="contain"
               />
             </div>
-            <h1 className="flex justify-center text-3xl font-semibold text-[#986923]">
-              Welcome to Metronic
+            <h1 className="flex justify-center text-3xl font-semibold text-[#29C7A6]">
+              Welcome to Platfawm
             </h1>
-            <p className="flex flex-col items-center font-medium text-[#986923]">
-              <span>Discover Amazing Metronic</span>
+            <p className="flex flex-col items-center font-medium text-[#15325C]">
+              <span>Discover Amazing Platfawm</span>
               <span>with great build tools</span>
             </p>
           </div>

@@ -9,10 +9,10 @@ export default function Home() {
     <div className="bg-[#f7f7f7]">
       <Head>
         <title>
-          Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for
+          Platfawm - the world's #1 selling Bootstrap Admin Theme Ecosystem for
           HTML, Vue, React, Angular & Laravel by Keenthemes
         </title>
-        <link rel="icon" href="/logos/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
       <main>
