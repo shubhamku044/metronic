@@ -63,7 +63,7 @@ const signIn = () => {
                     <button className="block w-full rounded bg-[#29C7A6] py-2 text-sm font-medium text-white duration-200 hover:bg-[#28C6FF]">
                       Continue
                     </button>
-                    <div className="text-center text-xs font-semibold uppercase text-gray-400">
+                    {/* <div className="text-center text-xs font-semibold uppercase text-gray-400">
                       or
                     </div>
                     <Link href="#">
@@ -101,7 +101,7 @@ const signIn = () => {
                         </div>
                         <div>Continue with Apple</div>
                       </a>
-                    </Link>
+                    </Link> */}
                   </div>
                 </form>
               </div>
@@ -114,7 +114,7 @@ const signIn = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Purchase
+                    Privacy policy
                   </div>
                 </div>
               </div>

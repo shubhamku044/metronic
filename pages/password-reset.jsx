@@ -66,7 +66,7 @@ const passwordReset = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Purchase
+                    Privacy policy
                   </div>
                 </div>
               </div>

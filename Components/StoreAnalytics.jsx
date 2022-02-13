@@ -22,7 +22,7 @@ const StoreAnalytics = () => {
         <div className="flex items-center justify-center bg-gray-300 py-8 text-lg font-semibold">
           2
         </div>
-        <div className="flex items-center justify-center bg-gray-300 text-lg font-semibold lg:col-span-2 xl:col-span-1">
+        <div className="flex items-center justify-center bg-gray-300 py-8 text-lg font-semibold lg:col-span-2 xl:col-span-1">
           3
         </div>
       </div>

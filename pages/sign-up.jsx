@@ -32,7 +32,7 @@ const signUp = () => {
                       </p>
                     </div>
                   </div>
-                  <Link href="#">
+                  {/* <Link href="#">
                     <a className="mt-8 flex w-full items-center justify-center space-x-2 rounded bg-blue-100 py-2 text-sm font-medium text-[#28C6FF] duration-200 hover:bg-[#28C6FF] hover:text-white">
                       <div className="relative h-5 w-5">
                         <Image
@@ -43,12 +43,12 @@ const signUp = () => {
                       </div>
                       <div>Sign in with Google</div>
                     </a>
-                  </Link>
+                  </Link> */}
                   <div className="mt-8 flex items-center justify-center space-x-1">
-                    <div className="h-[1px] flex-1 bg-gray-200"></div>
+                    {/* <div className="h-[1px] flex-1 bg-gray-200"></div>
                     <div className="text-xs font-medium uppercase text-gray-400">
                       or
-                    </div>
+                    </div> */}
                     <div className="h-[1px] flex-1 bg-gray-200"></div>
                   </div>
                   <div className="mt-10 flex flex-col space-y-2">
@@ -148,7 +148,7 @@ const signUp = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Purchase
+                    Privacy policy
                   </div>
                 </div>
               </div>
