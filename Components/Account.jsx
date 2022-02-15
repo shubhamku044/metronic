@@ -26,22 +26,22 @@ const Account = ({ children }) => {
         <Header />
         <Toolbar title={'Account Overview'} />
         <section className="bg-white">
-          <main className="mx-auto max-w-6xl px-8 py-6">
+          <main className="mx-auto max-w-6xl space-y-8 px-4 py-6 lg:px-8">
             <div className="space-y-8 rounded-lg border bg-gray-50 px-6 pt-6">
-              <div className="flex items-center space-x-8">
+              <div className="flex flex-col space-y-8 sm:flex-row sm:space-y-0 sm:space-x-8 lg:items-center">
                 <div>
-                  <div className="relative h-32 w-32">
+                  <div className="relative h-48 w-48 sm:h-28 sm:w-28 md:h-32 md:w-32">
                     <Image
                       src="/avatars/300-10.jpg"
                       layout="fill"
                       objectFit="contain"
                       className="rounded-md"
                     />
-                    <div className="absolute bottom-8 -right-2 h-3 w-3 rounded-full bg-[#00B2FF] ring-4 ring-gray-50"></div>
+                    <div className="absolute bottom-6 -right-1 h-2 w-2 rounded-full bg-[#00B2FF] ring-2 ring-gray-50 lg:bottom-8 lg:-right-2 lg:h-3 lg:w-3 lg:ring-4"></div>
                   </div>
                 </div>
                 <div className="flex-1 space-y-6">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col justify-between space-y-4 md:flex-row md:space-y-0 lg:items-center">
                     <div className="space-y-2">
                       <div className="flex items-center space-x-4">
                         <div className="flex items-center space-x-1">
@@ -56,20 +56,20 @@ const Account = ({ children }) => {
                           </span>
                         </div>
                       </div>
-                      <div className="flex items-center space-x-4">
-                        <div className="flex cursor-pointer items-center space-x-2 text-gray-400 hover:text-[#00B2FF]">
+                      <div className="flex flex-col space-y-2 xs:flex-row xs:items-center xs:space-y-0 xs:space-x-2 md:space-x-3">
+                        <div className="flex cursor-pointer items-center space-x-1 text-gray-400 hover:text-[#00B2FF] md:space-x-2">
                           <div>
                             <UserCircleIcon className="h-4 w-4" />
                           </div>
                           <div className="text-xs font-medium">Developer</div>
                         </div>
-                        <div className="flex cursor-pointer items-center space-x-2 text-gray-400 hover:text-[#00B2FF]">
+                        <div className="flex cursor-pointer items-center space-x-1 text-gray-400 hover:text-[#00B2FF] md:space-x-2">
                           <div>
                             <LocationMarkerIcon className="h-4 w-4" />
                           </div>
                           <div className="text-xs font-medium">Los Angles</div>
                         </div>
-                        <div className="flex cursor-pointer items-center space-x-2 text-gray-400 hover:text-[#00B2FF]">
+                        <div className="flex cursor-pointer items-center space-x-1 text-gray-400 hover:text-[#00B2FF] md:space-x-2">
                           <div>
                             <MailIcon className="h-4 w-4" />
                           </div>
@@ -93,13 +93,13 @@ const Account = ({ children }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex flex-col justify-between space-y-4 lg:flex-row lg:items-center lg:space-y-0">
                     <div>
-                      <div className="flex items-center space-x-6">
-                        <div className="rounded-lg border border-dashed px-3 py-2">
+                      <div className="flex flex-col space-x-0 space-y-2 xs:flex-row xs:items-center xs:space-y-0 xs:space-x-6">
+                        <div className="w-fit rounded-lg border border-dashed px-2 py-1 xs:w-auto sm:px-3 sm:py-2">
                           <div className="flex items-center space-x-1">
                             <ArrowSmUpIcon className="h-5 w-5 text-blue-400" />
-                            <span className="text-lg font-semibold">
+                            <span className="text-base font-semibold sm:text-lg">
                               $4,500
                             </span>
                           </div>
@@ -107,19 +107,23 @@ const Account = ({ children }) => {
                             Earnings
                           </div>
                         </div>
-                        <div className="rounded-lg border border-dashed px-3 py-2">
+                        <div className="w-fit rounded-lg border border-dashed px-2 py-1 xs:w-auto sm:px-3 sm:py-2">
                           <div className="flex items-center space-x-1">
                             <ArrowSmDownIcon className="h-5 w-5 text-red-400" />
-                            <span className="text-lg font-semibold">75</span>
+                            <span className="text-base font-semibold sm:text-lg">
+                              75
+                            </span>
                           </div>
                           <div className="ml-2 text-xs font-medium text-gray-400">
                             Projects
                           </div>
                         </div>
-                        <div className="rounded-lg border border-dashed px-3 py-2">
+                        <div className="w-fit rounded-lg border border-dashed px-2 py-1 xs:w-auto sm:px-3 sm:py-2">
                           <div className="flex items-center space-x-1">
                             <ArrowSmUpIcon className="h-5 w-5 text-blue-400" />
-                            <span className="text-lg font-semibold">60%</span>
+                            <span className="text-base font-semibold sm:text-lg">
+                              60%
+                            </span>
                           </div>
                           <div className="ml-2 text-xs font-medium text-gray-400">
                             Success Rate
@@ -128,13 +132,13 @@ const Account = ({ children }) => {
                       </div>
                     </div>
                     <div>
-                      <div className="w-60">
+                      <div className="w-48 xs:w-60">
                         <div className="flex items-center justify-between text-xs font-semibold">
                           <p className="text-gray-400">Profile Completion</p>
                           <p className="text-gray-600">75%</p>
                         </div>
-                        <div className="relative mt-2 h-2 w-full rounded-full bg-gray-300">
-                          <div className="absolute top-0 left-0 h-2 w-3/4 rounded-full bg-blue-500"></div>
+                        <div className="relative mt-2 h-[5px] w-full rounded-full bg-gray-300">
+                          <div className="absolute top-0 left-0 h-[5px] w-3/4 rounded-full bg-blue-500"></div>
                         </div>
                       </div>
                     </div>
@@ -142,9 +146,9 @@ const Account = ({ children }) => {
                 </div>
               </div>
               <div>
-                <ul className="flex text-base font-medium text-gray-400 md:space-x-8">
+                <ul className="flex flex-wrap space-x-2 text-xs font-medium text-gray-400 xs:space-x-4 xs:text-sm sm:space-x-8">
                   <li
-                    className={`cursor-pointer border-blue-400 pb-3 hover:border-b-[3px] ${
+                    className={`cursor-pointer border-blue-400 pb-2 hover:border-b-[3px] sm:pb-3 ${
                       router.pathname === '/account/overview'
                         ? 'border-b-[3px] border-blue-400 text-blue-400'
                         : ' '
@@ -154,7 +158,7 @@ const Account = ({ children }) => {
                     Overview
                   </li>
                   <li
-                    className={`cursor-pointer border-blue-400 pb-3 hover:border-b-[3px] ${
+                    className={`cursor-pointer border-blue-400 pb-2 hover:border-b-[3px] sm:pb-3 ${
                       router.pathname === '/account/settings'
                         ? 'border-b-[3px] border-blue-400 text-blue-400'
                         : ' '
@@ -164,7 +168,7 @@ const Account = ({ children }) => {
                     Settings
                   </li>
                   <li
-                    className={`cursor-pointer border-blue-400 pb-3 hover:border-b-[3px] ${
+                    className={`cursor-pointer border-blue-400 pb-2 hover:border-b-[3px] sm:pb-3 ${
                       router.pathname === '/account/security'
                         ? 'border-b-[3px] border-blue-400 text-blue-400'
                         : ' '
@@ -174,7 +178,7 @@ const Account = ({ children }) => {
                     Security
                   </li>
                   <li
-                    className={`cursor-pointer border-blue-400 pb-3 hover:border-b-[3px] ${
+                    className={`cursor-pointer border-blue-400 pb-2 hover:border-b-[3px] sm:pb-3 ${
                       router.pathname === '/account/billing'
                         ? 'border-b-[3px] border-blue-400 text-blue-400'
                         : ' '
@@ -184,7 +188,7 @@ const Account = ({ children }) => {
                     Billing
                   </li>
                   <li
-                    className={`cursor-pointer border-blue-400 pb-3 hover:border-b-[3px] ${
+                    className={`cursor-pointer border-blue-400 pb-2 hover:border-b-[3px] sm:pb-3 ${
                       router.pathname === '/account/logs'
                         ? 'border-b-[3px] border-blue-400 text-blue-400'
                         : ' '

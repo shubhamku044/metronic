@@ -3,7 +3,7 @@ import HeaderTop from './HeaderTop'
 
 const Header = () => {
   return (
-    <div className="bg-white">
+    <div className="overflow-x-hidden bg-white">
       <HeaderTop />
       <div className="h-[1px] bg-gray-200"></div>
       <HeaderMenu />
