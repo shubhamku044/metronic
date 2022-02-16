@@ -5,7 +5,7 @@ const Settings = () => {
   return (
     <div>
       <Account>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">Profile Details</div>
             {/* <div>
@@ -25,7 +25,7 @@ const Settings = () => {
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="fname"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Full Name
                 </label>
@@ -34,20 +34,20 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="First Name"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                   <input
                     type="text"
                     id="fname"
                     placeholder="Last Name"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="company"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Company
                 </label>
@@ -56,14 +56,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Company"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="contact"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Contact Phone
                 </label>
@@ -72,14 +72,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Contact"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="companySite"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Company Site
                 </label>
@@ -88,14 +88,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Company Website"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="country"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Country
                 </label>
@@ -104,14 +104,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Country Name"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="country"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Language
                 </label>
@@ -120,14 +120,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Choose Language"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="country"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Time Zone
                 </label>
@@ -136,14 +136,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Chose Time Zone"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="communication"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Currency
                 </label>
@@ -152,14 +152,14 @@ const Settings = () => {
                     type="text"
                     id="fname"
                     placeholder="Choose your Currency"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="communication"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Communication
                 </label>
@@ -167,14 +167,14 @@ const Settings = () => {
                   <input
                     type="text"
                     id="fname"
-                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300"
+                    className="flex-1 rounded-md bg-blue-50 py-3 px-4 text-xs font-medium text-gray-700 outline-none ring-0 focus:bg-blue-100 focus:outline-offset-0 focus:outline-blue-300 dark:bg-darkBg dark:text-platfawmTextDark-1"
                   />
                 </div>
               </div>
               <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-x-0">
                 <label
                   htmlFor="allowChanges"
-                  className="w-1/2 text-xs font-medium text-gray-700 sm:w-2/5"
+                  className="w-1/2 text-xs font-medium text-gray-700 dark:text-gray-400 sm:w-2/5"
                 >
                   Allow Changes
                 </label>

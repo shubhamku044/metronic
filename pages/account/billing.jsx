@@ -13,7 +13,7 @@ const Billing = () => {
   return (
     <div>
       <Account>
-        <div className="mx-auto max-w-6xl space-y-4 rounded-lg border bg-gray-50 py-4">
+        <div className="mx-auto max-w-6xl space-y-4 rounded-lg border bg-gray-50 py-4 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="mg:items-center flex flex-col justify-between space-y-4 px-6 py-4 md:flex-row md:space-y-0">
             <div className="">
               <div className="text-lg font-semibold tracking-wide text-gray-900">
@@ -59,12 +59,12 @@ const Billing = () => {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
-          <div className="flex items-start justify-between border-b px-6 pt-4">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
+          <div className="flex items-start justify-between border-b px-6 pt-4 dark:border-b-borderBlue">
             <div className="text-sm font-semibold tracking-wide sm:text-lg">
               Payment Methods
             </div>
-            <div className="space-x-4 text-xs text-gray-500 sm:text-sm">
+            <div className="space-x-4 text-xs text-gray-500 dark:text-platfawmTextDark-2 sm:text-sm">
               <button className="border-b-2 border-blue-500 pb-4 font-semibold">
                 Credit / Debit Card
               </button>
@@ -78,8 +78,8 @@ const Billing = () => {
             {payMethod === 'paypal' && <Paypal />}
           </div>
         </div>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
-          <div className="flex items-start justify-between border-b px-6 pt-4">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
+          <div className="flex items-start justify-between border-b px-6 pt-4 dark:border-b-borderBlue">
             <div className="text-lg font-semibold tracking-wide">
               Billing Address
             </div>
@@ -89,12 +89,12 @@ const Billing = () => {
             <BillingAddress />
           </div>
         </div>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
-          <div className="flex items-start justify-between border-b px-6 pt-4">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
+          <div className="flex items-start justify-between border-b px-6 pt-4 dark:border-b-borderBlue">
             <div className="text-lg font-semibold tracking-wide">
               Billing History
             </div>
-            <div className="space-x-4 text-sm text-gray-500">
+            <div className="space-x-4 text-sm text-gray-500 dark:text-platfawmTextDark-2">
               <button className="border-b-2 border-blue-500 pb-4 font-semibold">
                 Month
               </button>

@@ -4,7 +4,7 @@ const LoginSession = () => {
   return (
     <>
       <table className="block w-full overflow-x-auto text-left md:inline-table">
-        <thead className="bg-gray-200 text-sm tracking-wider">
+        <thead className="bg-gray-200 text-sm tracking-wider dark:bg-darkBg">
           <tr className="">
             <th className="min-w-[15.625rem] py-3 pl-6 font-medium">
               Location
@@ -16,7 +16,7 @@ const LoginSession = () => {
           </tr>
         </thead>
         <tbody className="text-xs font-medium text-gray-600">
-          <tr className="border-b">
+          <tr className="border-b dark:border-borderBlue">
             <td className="py-3 pl-6">USA(5)</td>
             <td className="">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
@@ -27,7 +27,7 @@ const LoginSession = () => {
             <td className="">236.125.56.78</td>
             <td className="">2 mins ago</td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-borderBlue">
             <td className="py-3 pl-6">USA(5)</td>
             <td className="">
               <span className="w-fit rounded-md bg-red-50 px-2 py-1 text-red-400">
@@ -38,7 +38,7 @@ const LoginSession = () => {
             <td className="">236.125.56.78</td>
             <td className="">2 mins ago</td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-borderBlue">
             <td className="py-3 pl-6">USA(5)</td>
             <td className="">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
@@ -49,7 +49,7 @@ const LoginSession = () => {
             <td className="">236.125.56.78</td>
             <td className="">2 mins ago</td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-borderBlue">
             <td className="py-3 pl-6">USA(5)</td>
             <td className="">
               <span className="w-fit rounded-md bg-yellow-50 px-2 py-1 text-yellow-400">

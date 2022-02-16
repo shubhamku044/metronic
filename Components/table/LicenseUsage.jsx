@@ -5,7 +5,7 @@ const LicenseUsage = () => {
   return (
     <>
       <table className="block w-full overflow-x-auto text-left lg:inline-table">
-        <thead className="bg-gray-200 text-sm tracking-wider">
+        <thead className="bg-gray-200 text-sm tracking-wider dark:bg-darkBg">
           <tr className="">
             <th className="min-w-[9.375rem] py-3 pl-6 font-medium">Status</th>
             <th className="min-w-[16.25rem] py-3 font-medium">Operator</th>
@@ -16,7 +16,7 @@ const LicenseUsage = () => {
           </tr>
         </thead>
         <tbody className="text-xs font-medium text-gray-600">
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
                 License
@@ -30,7 +30,7 @@ const LicenseUsage = () => {
               <DuplicateIcon className="h-4 w-4 cursor-pointer text-gray-500" />
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
                 License
@@ -44,7 +44,7 @@ const LicenseUsage = () => {
               <DuplicateIcon className="h-4 w-4 cursor-pointer text-gray-500" />
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
                 License
@@ -58,7 +58,7 @@ const LicenseUsage = () => {
               <DuplicateIcon className="h-4 w-4 cursor-pointer text-gray-500" />
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
                 License
@@ -72,7 +72,7 @@ const LicenseUsage = () => {
               <DuplicateIcon className="h-4 w-4 cursor-pointer text-gray-500" />
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
               <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
                 License

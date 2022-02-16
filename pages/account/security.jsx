@@ -8,8 +8,8 @@ const Security = () => {
   return (
     <div>
       <Account>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
-          <div className="flex items-start justify-between border-b px-6 pt-4">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
+          <div className="flex items-start justify-between border-b px-6 pt-4 dark:border-borderBlue">
             <div className="text-sm font-semibold tracking-wide sm:text-lg">
               Security Summary
             </div>
@@ -51,7 +51,7 @@ const Security = () => {
             <ActivityChart />
           </div>
         </div>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">Login Sessions</div>
             <div>
@@ -60,12 +60,11 @@ const Security = () => {
               </button>
             </div>
           </div>
-          <hr />
           <div className="pb-4">
             <LoginSession />
           </div>
         </div>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">License Usage</div>
             <div>
@@ -74,7 +73,6 @@ const Security = () => {
               </button>
             </div>
           </div>
-          <hr />
           <div className="pb-4">
             <LicenseUsage />
           </div>

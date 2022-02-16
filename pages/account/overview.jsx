@@ -8,7 +8,7 @@ const Overview = () => {
   return (
     <div>
       <Account>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">Profile Details</div>
             <div>
@@ -32,7 +32,10 @@ const Overview = () => {
                 >
                   Full Name
                 </label>
-                <div id="fname" className="text-xs font-semibold text-gray-700">
+                <div
+                  id="fname"
+                  className="text-xs font-semibold text-gray-700 dark:text-platfawmTextDark-3"
+                >
                   Phoebe
                 </div>
               </div>
@@ -43,7 +46,10 @@ const Overview = () => {
                 >
                   Company
                 </label>
-                <div id="company" className="text-xs font-medium text-gray-700">
+                <div
+                  id="company"
+                  className="text-xs font-medium text-gray-700 dark:text-platfawmTextDark-3"
+                >
                   Keenthemes
                 </div>
               </div>
@@ -56,7 +62,7 @@ const Overview = () => {
                 </label>
                 <div
                   id="contact"
-                  className="text-xs font-semibold text-gray-700"
+                  className="text-xs font-semibold text-gray-700 dark:text-platfawmTextDark-3"
                 >
                   044 3276 454 935
                 </div>
@@ -70,7 +76,7 @@ const Overview = () => {
                 </label>
                 <div
                   id="companySite"
-                  className="text-xs font-semibold text-gray-700"
+                  className="text-xs font-semibold text-gray-700 dark:text-platfawmTextDark-3"
                 >
                   keenthemes.com
                 </div>
@@ -84,7 +90,7 @@ const Overview = () => {
                 </label>
                 <div
                   id="country"
-                  className="text-xs font-semibold text-gray-700"
+                  className="text-xs font-semibold text-gray-700 dark:text-platfawmTextDark-3"
                 >
                   Germany
                 </div>
@@ -98,7 +104,7 @@ const Overview = () => {
                 </label>
                 <div
                   id="communication"
-                  className="text-xs font-semibold text-gray-700"
+                  className="text-xs font-semibold text-gray-700 dark:text-platfawmTextDark-3"
                 >
                   Email, Phone
                 </div>
@@ -112,7 +118,7 @@ const Overview = () => {
                 </label>
                 <div
                   id="allowChanges"
-                  className="text-xs font-semibold text-gray-700"
+                  className="text-xs font-semibold text-gray-700 dark:text-platfawmTextDark-3"
                 >
                   Yes
                 </div>

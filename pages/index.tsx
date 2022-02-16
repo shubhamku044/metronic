@@ -6,7 +6,7 @@ import AuthAnalytics from '../Components/AuthAnalytics'
 
 export default function Home() {
   return (
-    <div className="bg-[#f7f7f7]">
+    <div className="bg-[#f7f7f7] dark:bg-darkBlue">
       <Head>
         <title>
           Platfawm - the world's #1 selling Bootstrap Admin Theme Ecosystem for
@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <main>
         <Toolbar title={'Auth Analytics'} />
-        <div className="bg-white">
+        <div className="bg-white dark:bg-darkBg">
           <section className="mx-auto max-w-6xl px-4">
             <AuthAnalytics />
           </section>

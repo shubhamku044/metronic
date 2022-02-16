@@ -17,17 +17,25 @@ import { useEffect } from 'react'
 const Account = ({ children }) => {
   const router = useRouter()
 
+  let heading
+  if (router.pathname === '/account/overview') heading = 'Account Overview'
+  if (router.pathname === '/account/settings') heading = 'Account Setting'
+  if (router.pathname === '/account/security') heading = 'Security'
+  if (router.pathname === '/account/billing') heading = 'Billing'
+  if (router.pathname === '/account/logs') heading = 'Logs'
+
   return (
     <>
       <Head>
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <div className="bg-[#f7f7f7]">
+      <div className="bg-[#f7f7f7] dark:bg-darkBlue">
         <Header />
-        <Toolbar title={'Account Overview'} />
-        <section className="bg-white">
+
+        <Toolbar title={heading} />
+        <section className="bg-white dark:bg-darkBg">
           <main className="mx-auto max-w-6xl space-y-8 px-4 py-6 lg:px-8">
-            <div className="space-y-8 rounded-lg border bg-gray-50 px-6 pt-6">
+            <div className="space-y-8 rounded-lg border bg-gray-50 px-6 pt-6 dark:border-borderBlue dark:bg-darkBg-sec">
               <div className="flex flex-col space-y-8 sm:flex-row sm:space-y-0 sm:space-x-8 lg:items-center">
                 <div>
                   <div className="relative h-48 w-48 sm:h-28 sm:w-28 md:h-32 md:w-32">
@@ -37,7 +45,7 @@ const Account = ({ children }) => {
                       objectFit="contain"
                       className="rounded-md"
                     />
-                    <div className="absolute bottom-6 -right-1 h-2 w-2 rounded-full bg-[#00B2FF] ring-2 ring-gray-50 lg:bottom-8 lg:-right-2 lg:h-3 lg:w-3 lg:ring-4"></div>
+                    <div className="absolute bottom-6 -right-1 h-2 w-2 rounded-full bg-[#00B2FF] ring-2 ring-gray-50 dark:ring-darkBg-sec lg:bottom-8 lg:-right-2 lg:h-3 lg:w-3 lg:ring-4"></div>
                   </div>
                 </div>
                 <div className="flex-1 space-y-6">
@@ -45,13 +53,15 @@ const Account = ({ children }) => {
                     <div className="space-y-2">
                       <div className="flex items-center space-x-4">
                         <div className="flex items-center space-x-1">
-                          <h6 className="text-lg font-semibold">Phoebe</h6>
+                          <h6 className="text-lg font-semibold text-black dark:text-white">
+                            Phoebe
+                          </h6>
                           <span>
                             <BadgeCheckIcon className="h-5 w-5 text-[#00B2FF]" />
                           </span>
                         </div>
                         <div>
-                          <span className="cursor-pointer rounded-lg bg-blue-50 px-2 py-1 text-xs font-medium text-[#00a2ff] transition-all duration-200 hover:bg-[#00B2FF] hover:text-white">
+                          <span className="cursor-pointer rounded-lg bg-blue-50 px-2 py-1 text-xs font-medium text-[#00a2ff] transition-all duration-200 hover:bg-[#00B2FF] hover:text-white dark:bg-darkBg dark:text-platfawmBlueDark-primary dark:hover:text-platfawmBlueDark-1">
                             Upgrade to pro
                           </span>
                         </div>
@@ -146,7 +156,7 @@ const Account = ({ children }) => {
                 </div>
               </div>
               <div>
-                <ul className="flex flex-wrap space-x-2 text-xs font-medium text-gray-400 xs:space-x-4 xs:text-sm sm:space-x-8">
+                <ul className="flex flex-wrap space-x-2 text-xs font-medium text-gray-400 dark:text-gray-200 xs:space-x-4 xs:text-sm sm:space-x-8">
                   <li
                     className={`cursor-pointer border-blue-400 pb-2 hover:border-b-[3px] sm:pb-3 ${
                       router.pathname === '/account/overview'
@@ -203,7 +213,9 @@ const Account = ({ children }) => {
             </div>
             {children}
           </main>
-          <Footer />
+          <div className="bg-[#f7f7f7] dark:bg-darkBlue">
+            <Footer />
+          </div>
         </section>
       </div>
     </>

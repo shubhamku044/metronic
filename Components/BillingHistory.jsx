@@ -4,7 +4,7 @@ const BillingHistory = () => {
   return (
     <>
       <table className="block w-full overflow-x-auto text-left sm:inline-table">
-        <thead className="bg-gray-200 text-sm tracking-wider">
+        <thead className="bg-gray-200 text-sm tracking-wider dark:bg-darkBg">
           <tr className="">
             <th className="min-w-[9.375rem] py-3 pl-6 font-medium">Date</th>
             <th className="min-w-[12.5rem] py-3 font-medium">Description</th>
@@ -14,7 +14,7 @@ const BillingHistory = () => {
           </tr>
         </thead>
         <tbody className="text-xs font-medium text-gray-600">
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">Nov 01, 2021</td>
             <td className="">
               <span className="text-blue-400">Billing for Ocrober 2022</span>
@@ -31,7 +31,7 @@ const BillingHistory = () => {
               </button>
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">Nov 01, 2021</td>
             <td className="">
               <span className="text-blue-400">Billing for Ocrober 2022</span>
@@ -48,7 +48,7 @@ const BillingHistory = () => {
               </button>
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">Nov 01, 2021</td>
             <td className="">
               <span className="text-blue-400">Billing for Ocrober 2022</span>
@@ -65,7 +65,7 @@ const BillingHistory = () => {
               </button>
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">Nov 01, 2021</td>
             <td className="">
               <span className="text-blue-400">Billing for Ocrober 2022</span>
@@ -82,7 +82,7 @@ const BillingHistory = () => {
               </button>
             </td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">Nov 01, 2021</td>
             <td className="">
               <span className="text-blue-400">Billing for Ocrober 2022</span>
