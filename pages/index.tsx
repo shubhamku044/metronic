@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Toolbar from '../Components/Toolbar'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header/Header'
-import StoreAnalytics from '../Components/StoreAnalytics'
+import AuthAnalytics from '../Components/AuthAnalytics'
 
 export default function Home() {
   return (
@@ -16,10 +16,10 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Toolbar title={'Store Analytics'} />
+        <Toolbar title={'Auth Analytics'} />
         <div className="bg-white">
           <section className="mx-auto max-w-6xl px-4">
-            <StoreAnalytics />
+            <AuthAnalytics />
           </section>
         </div>
       </main>
