@@ -17,7 +17,7 @@ const Aside = () => {
             <h1 className="flex justify-center text-3xl font-semibold text-[#29C7A6]">
               Welcome to Platfawm
             </h1>
-            <p className="flex flex-col items-center font-medium text-[#15325C]">
+            <p className="flex flex-col items-center font-medium text-white">
               <span>Discover Amazing Platfawm</span>
               <span>with great build tools</span>
             </p>

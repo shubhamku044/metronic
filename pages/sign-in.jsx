@@ -10,7 +10,7 @@ const signIn = () => {
         <title>Platfawm - Sign In</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <div>
+      <div className="min-h-screen bg-white dark:bg-darkBg">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-[51rem] xl:w-[61rem]">
             <Aside />
@@ -20,8 +20,8 @@ const signIn = () => {
               <div className="mx-auto max-w-2xl py-12 lg:max-w-sm">
                 <form action="#" className="px-4">
                   <div className="space-y-2 text-center">
-                    <h1 className="text-2xl font-semibold text-gray-800">
-                      Sign In to Metronic
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-platfawmTextDark-2">
+                      Sign In to Passport
                     </h1>
                     <div className="flex justify-center space-x-2 text-sm font-medium">
                       <span className="text-gray-400">New Here?</span>
@@ -114,7 +114,7 @@ const signIn = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Privacy policy
+                    Privacy
                   </div>
                 </div>
               </div>

@@ -15,10 +15,10 @@ const LicenseUsage = () => {
             <th className="min-w-[9.375rem] py-3 font-medium"> </th>
           </tr>
         </thead>
-        <tbody className="text-xs font-medium text-gray-600">
+        <tbody className="text-xs font-medium text-gray-600 dark:text-platfawmBlueLight-1">
           <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
-              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
+              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400 dark:text-platfawmBlueLight-teriary">
                 License
               </span>
             </td>
@@ -32,7 +32,7 @@ const LicenseUsage = () => {
           </tr>
           <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
-              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
+              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400 dark:text-platfawmBlueLight-teriary">
                 License
               </span>
             </td>
@@ -46,7 +46,7 @@ const LicenseUsage = () => {
           </tr>
           <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
-              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
+              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400 dark:text-platfawmBlueLight-teriary">
                 License
               </span>
             </td>
@@ -60,7 +60,7 @@ const LicenseUsage = () => {
           </tr>
           <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
-              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
+              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400 dark:text-platfawmBlueLight-teriary">
                 License
               </span>
             </td>
@@ -74,7 +74,7 @@ const LicenseUsage = () => {
           </tr>
           <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">
-              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400">
+              <span className="w-fit rounded-md bg-blue-50 px-2 py-1 text-blue-400 dark:text-platfawmBlueLight-teriary">
                 License
               </span>
             </td>

@@ -11,7 +11,7 @@ const Logs = () => {
   return (
     <div>
       <Account>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50">
+        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">Login Sessions</div>
             <div>
@@ -20,12 +20,12 @@ const Logs = () => {
               </button>
             </div>
           </div>
-          <hr />
+          <hr className="dark:border-borderBlue" />
           <div className="py-4">
             <LoginSession />
           </div>
         </div>
-        <div className="mx-auto mt-8 max-w-6xl rounded-lg border bg-gray-50">
+        <div className="mx-auto mt-8 max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">Logs</div>
             <div>
@@ -35,7 +35,7 @@ const Logs = () => {
               </button>
             </div>
           </div>
-          <hr />
+          <hr className="dark:border-borderBlue" />
           <div className="py-4 px-6">
             <LogsTable />
           </div>

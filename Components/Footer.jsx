@@ -21,7 +21,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href="#">
-                <a target="_blank">Privacy policy</a>
+                <a target="_blank">Privacy</a>
               </Link>
             </li>
           </ul>

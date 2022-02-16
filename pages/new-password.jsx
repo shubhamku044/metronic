@@ -15,12 +15,12 @@ const newPassword = () => {
           <div className="lg:w-[51rem] xl:w-[61rem]">
             <Aside />
           </div>
-          <div className="w-full py-4">
+          <div className="w-full bg-white py-4 dark:bg-darkBg">
             <div className="">
               <div className="mx-auto max-w-2xl py-12 lg:max-w-sm">
                 <form action="#" className="px-4">
                   <div className="space-y-2 text-center">
-                    <h1 className="text-2xl font-semibold text-gray-800">
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-platfawmTextDark-2">
                       Setup New Password
                     </h1>
                     <div className="flex justify-center space-x-2 text-sm font-medium">
@@ -43,7 +43,6 @@ const newPassword = () => {
                       type="password"
                       name="#"
                       id="#"
-                      autoComplete={false}
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
                   </div>
@@ -88,7 +87,7 @@ const newPassword = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Privacy policy
+                    Privacy
                   </div>
                 </div>
               </div>

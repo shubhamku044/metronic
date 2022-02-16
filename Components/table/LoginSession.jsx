@@ -15,7 +15,7 @@ const LoginSession = () => {
             <th className="min-w-[9.375rem] py-3 font-medium">Time</th>
           </tr>
         </thead>
-        <tbody className="text-xs font-medium text-gray-600">
+        <tbody className="text-xs font-medium text-gray-600 dark:text-platfawmBlueLight-1">
           <tr className="border-b dark:border-borderBlue">
             <td className="py-3 pl-6">USA(5)</td>
             <td className="">

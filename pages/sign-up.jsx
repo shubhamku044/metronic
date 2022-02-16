@@ -15,12 +15,12 @@ const signUp = () => {
           <div className="lg:w-[51rem] xl:w-[61rem]">
             <Aside />
           </div>
-          <div className="w-full py-4">
+          <div className="w-full bg-white py-4 dark:bg-darkBg">
             <div className="">
               <div className="mx-auto max-w-2xl py-12 lg:max-w-md">
                 <form action="#" className="px-4">
                   <div className="space-y-2 text-center">
-                    <h1 className="text-2xl font-semibold text-gray-800">
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-platfawmTextDark-2">
                       Create an Account
                     </h1>
                     <div className="flex justify-center space-x-2 text-sm font-medium">
@@ -106,6 +106,18 @@ const signUp = () => {
                       id="#"
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
+                    <div>
+                      <div className="-mt-1 grid w-full grid-cols-4 gap-2">
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                      </div>
+                      <p className="mt-1 text-xs text-gray-400">
+                        Use 8 or more characters with a mix of letters, numbers
+                        & symbols.
+                      </p>
+                    </div>
                   </div>
                   <div className="mt-6 flex flex-col space-y-2">
                     <div className="flex justify-between text-xs font-semibold tracking-wide">
@@ -148,7 +160,7 @@ const signUp = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Privacy policy
+                    Privacy
                   </div>
                 </div>
               </div>

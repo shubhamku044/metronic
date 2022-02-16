@@ -13,7 +13,7 @@ const BillingHistory = () => {
             <th className="min-w-[6.25rem] py-3 font-medium"> </th>
           </tr>
         </thead>
-        <tbody className="text-xs font-medium text-gray-600">
+        <tbody className="text-xs font-medium text-gray-600 dark:text-platfawmBlueLight-1">
           <tr className="border-b dark:border-b-borderBlue">
             <td className="py-3 pl-6">Nov 01, 2021</td>
             <td className="">

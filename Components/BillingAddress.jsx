@@ -1,6 +1,6 @@
 const Address = ({ AddressName, primary, line1, line2, line3 }) => {
   return (
-    <div className="rounded-md border border-dashed bg-blue-50 px-4 py-4">
+    <div className="rounded-md border border-dashed bg-blue-50 px-4 py-4 dark:bg-darkBg-tert">
       <div className="flex items-center space-x-2 text-sm font-semibold">
         <div>{AddressName}</div>
         {primary && (
@@ -10,7 +10,7 @@ const Address = ({ AddressName, primary, line1, line2, line3 }) => {
         )}
       </div>
       <div className="mt-2 flex items-center justify-between">
-        <div className="text-sm font-normal text-gray-600">
+        <div className="text-sm font-normal text-gray-600 dark:text-gray-300">
           {line1} <br />
           {line2}
           <br />
@@ -62,10 +62,10 @@ const BillingAddress = () => {
             line3="US"
           />
         </div>
-        <div className="w-full rounded-md border border-dashed bg-blue-100/50 px-4 py-4">
+        <div className="w-full rounded-md border border-dashed bg-blue-100/50 px-4 py-4 dark:bg-darkBg-tert/30">
           <div className="flex flex-col justify-between space-y-4 sm:flex-row sm:items-center sm:space-y-0">
             <div className="max-w-xs">
-              <p className="text-base font-semibold text-gray-900">
+              <p className="text-base font-semibold text-gray-900 dark:text-gray-200">
                 Important Note!
               </p>
               <p className="mt-1 text-xs font-light">

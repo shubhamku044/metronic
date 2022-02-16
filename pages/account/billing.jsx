@@ -16,7 +16,7 @@ const Billing = () => {
         <div className="mx-auto max-w-6xl space-y-4 rounded-lg border bg-gray-50 py-4 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="mg:items-center flex flex-col justify-between space-y-4 px-6 py-4 md:flex-row md:space-y-0">
             <div className="">
-              <div className="text-lg font-semibold tracking-wide text-gray-900">
+              <div className="text-lg font-semibold tracking-wide text-gray-900 dark:text-white">
                 Active until Dec 09, 2022
               </div>
               <div className="text-xs text-gray-400">
@@ -25,8 +25,8 @@ const Billing = () => {
             </div>
             <div className="w-64 xs:w-72 sm:w-96">
               <div className="flex items-center justify-between text-base font-semibold">
-                <p className="text-gray-700">User</p>
-                <p className="text-gray-700">84 of 100 Used</p>
+                <p className="text-gray-700 dark:text-white">User</p>
+                <p className="text-gray-700 dark:text-white">84 of 100 Used</p>
               </div>
               <div className="relative mt-2 h-2 w-full rounded-full bg-gray-300">
                 <div className="absolute top-0 left-0 h-2 w-5/6 rounded-full bg-blue-500"></div>
@@ -40,7 +40,7 @@ const Billing = () => {
           </div>
           <div className="flex flex-col justify-between space-y-4 px-6 py-4 md:flex-row md:items-center md:space-y-0">
             <div className="">
-              <div className="text-sm font-medium tracking-wide text-gray-900">
+              <div className="text-sm font-medium tracking-wide text-gray-900 dark:text-white">
                 $24.99 <span className="text-gray-500">Per Month</span>
               </div>
               <div className="mt-1 text-xs text-gray-400">

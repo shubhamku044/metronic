@@ -17,6 +17,8 @@ const HeaderTop = () => {
   const router = useRouter()
   const [mounted, setMounted] = useState(false)
 
+  const [openNav, setOpenNav] = useState(false)
+
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -53,7 +55,10 @@ group-hover:opacity-90 lg:h-6 lg:w-6"
     <nav className="px-4 py-4">
       <div className="mx-auto flex max-w-6xl items-center justify-between">
         <div className="flex flex-row items-center space-x-2">
-          <MenuIcon className="block h-5 w-5 cursor-pointer text-gray-600 opacity-70 lg:hidden" />
+          <MenuIcon
+            className="block h-5 w-5 cursor-pointer text-gray-600 opacity-70 lg:hidden"
+            onClick={() => setOpenNav(!openNav)}
+          />
 
           <div
             className="relative h-5 w-24 lg:h-9 lg:w-36"
@@ -103,6 +108,61 @@ group-hover:opacity-90 lg:h-6 lg:w-6"
           </div>
         </div>
       </div>
+      {openNav && (
+        <>
+          <div className="fixed top-0 right-0 z-50 flex h-full w-72 items-center justify-center bg-gray-100 dark:bg-darkBg">
+            <ul className="flex flex-col items-center justify-center space-y-6 text-xs font-medium tracking-wider text-gray-500 dark:text-platfawmTextDark-2">
+              <li>
+                <div
+                  className={`cursor-pointer rounded-md px-3 py-2 font-poppins hover:bg-gray-100/80 dark:hover:bg-darkBlue ${
+                    router.pathname === '/'
+                      ? 'bg-gray-100/80 dark:bg-darkBlue'
+                      : ' '
+                  }`}
+                  onClick={() => {
+                    router.push('/')
+                  }}
+                >
+                  Auth Analytics
+                </div>
+              </li>
+              <li>
+                <div
+                  onClick={() => {
+                    router.push('/account/overview')
+                  }}
+                  className={`cursor-pointer rounded-md px-3 py-2 font-poppins hover:bg-gray-100/80 dark:hover:bg-darkBlue ${
+                    router.pathname === '/account/overview' ||
+                    router.pathname === '/account/settings' ||
+                    router.pathname === '/account/security' ||
+                    router.pathname === '/account/billing' ||
+                    router.pathname === '/account/logs'
+                      ? 'bg-gray-100/80 dark:bg-darkBlue'
+                      : ' '
+                  }`}
+                >
+                  Account
+                </div>
+              </li>
+              <li>
+                <div className="cursor-pointer rounded-md px-3 py-2 transition-all duration-200 hover:bg-gray-100/80 dark:hover:bg-darkBlue">
+                  Apps
+                </div>
+              </li>
+              <li>
+                <div className="cursor-pointer rounded-md px-3 py-2 transition-all duration-200 hover:bg-gray-100/80 dark:hover:bg-darkBlue">
+                  Resources
+                </div>
+              </li>
+              <li>
+                <div className="cursor-pointer rounded-md px-3 py-2 transition-all duration-200 hover:bg-gray-100/80 dark:hover:bg-darkBlue">
+                  Mega Menu
+                </div>
+              </li>
+            </ul>
+          </div>
+        </>
+      )}
     </nav>
   )
 }

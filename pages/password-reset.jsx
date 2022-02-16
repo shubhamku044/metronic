@@ -10,7 +10,7 @@ const passwordReset = () => {
         <title>Platfawm - Password Reset</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <div className="">
+      <div className="bg-white dark:bg-darkBg">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-[51rem] xl:w-[61rem]">
             <Aside />
@@ -23,7 +23,7 @@ const passwordReset = () => {
               >
                 <form action="#" className="px-4">
                   <div className="space-y-2 text-center">
-                    <h1 className="text-2xl font-semibold text-gray-800">
+                    <h1 className="text-2xl font-semibold text-gray-800 dark:text-platfawmTextDark-2">
                       Forgot Password ?
                     </h1>
                     <div className="flex justify-center space-x-2 text-sm font-medium">
@@ -66,7 +66,7 @@ const passwordReset = () => {
                     Support
                   </div>
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Privacy policy
+                    Privacy
                   </div>
                 </div>
               </div>

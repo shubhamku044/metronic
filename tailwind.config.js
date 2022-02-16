@@ -43,7 +43,7 @@ module.exports = {
         platfawmTextDark: { 1: '#B5EAEA', 2: '#E8F6EF', 3: '#95D1CC' },
         platfawmTextLight: { teriary: '#95D1CC' },
         'darkBg-sec': '#1E3163',
-        'darkBg-tert': '#053742',
+        'darkBg-tert': '#2666CF',
       },
     },
   },

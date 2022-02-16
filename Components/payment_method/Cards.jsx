@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Card = ({ holderName, primary, logoSrc, cardNumber, expiryDate }) => {
   return (
-    <div className="rounded-md border border-dashed bg-blue-50 px-4 py-4">
+    <div className="rounded-md border border-dashed bg-blue-50 px-4 py-4 dark:bg-darkBg-tert">
       <div className="flex items-center space-x-2 text-sm font-semibold">
         <div>{holderName}</div>
         {primary && (
@@ -25,7 +25,7 @@ const Card = ({ holderName, primary, logoSrc, cardNumber, expiryDate }) => {
             <div className="text-sm font-semibold text-gray-900">
               {cardNumber}
             </div>
-            <div className="text-xs font-medium text-gray-500">
+            <div className="text-xs font-medium text-gray-500 dark:text-gray-300">
               Card expires at {expiryDate}
             </div>
           </div>
@@ -79,10 +79,10 @@ const Cards = () => {
             expiryDate={'03/23'}
           />
         </div>
-        <div className="rounded-md border border-dashed bg-blue-100/50 px-4 py-4">
+        <div className="rounded-md border border-dashed bg-blue-100/50 px-4 py-4 dark:bg-darkBg-tert/30">
           <div className="flex flex-col justify-between space-y-4 sm:flex-row sm:items-center sm:space-y-0">
             <div className="max-w-xs">
-              <p className="text-base font-semibold text-gray-900">
+              <p className="text-base font-semibold text-gray-900 dark:text-gray-100">
                 Important Note!
               </p>
               <p className="mt-1 text-xs font-light">

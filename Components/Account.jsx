@@ -91,7 +91,7 @@ const Account = ({ children }) => {
                     </div>
                     <div>
                       <div className="flex items-center space-x-2 text-xs font-medium">
-                        <button className="rounded-lg bg-gray-100 px-3 py-2 text-gray-600 duration-200 hover:bg-gray-200 hover:text-gray-800">
+                        <button className="rounded-lg bg-gray-100 px-3 py-2 text-gray-600 duration-200 hover:bg-gray-200 hover:text-gray-800 dark:text-platfawmBlueLight-teriary">
                           Follow
                         </button>
                         <button className="rounded-lg bg-blue-400 px-3 py-2 text-white duration-200 hover:bg-blue-500 hover:text-white">
