@@ -64,7 +64,7 @@ const Security = () => {
             <LoginSession />
           </div>
         </div>
-        <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
+        {/* <div className="mx-auto max-w-6xl rounded-lg border bg-gray-50 dark:border-borderBlue dark:bg-darkBg-sec">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="font-semibold tracking-wide">License Usage</div>
             <div>
@@ -76,7 +76,7 @@ const Security = () => {
           <div className="pb-4">
             <LicenseUsage />
           </div>
-        </div>
+        </div> */}
       </Account>
     </div>
   )

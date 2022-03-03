@@ -15,6 +15,22 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "Components/Header/Header.jsx",
+    "Components/Header/HeaderTop.jsx",
+    "Components/Footer.jsx",
+    "Components/Dashboard.jsx",
+    "Components/Account.jsx",
+    "Components/payment_method/Paypal.jsx",
+    "Components/dashboard/TotalOnlineVisitors.jsx",
+    "Components/dashboard/TotalOnlineSales.jsx",
+    "Components/dashboard/graphs/onlineSales.jsx",
+    "Components/Toolbar.jsx",
+    "Components/search/Profile.jsx",
+    "Components/multi-steps/Aside.jsx"
+  ],
   "exclude": ["node_modules"]
 }

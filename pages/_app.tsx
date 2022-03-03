@@ -1,12 +1,15 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
+import { RecoilRoot } from 'recoil'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <ThemeProvider enableSystem={true} attribute="class">
-        <Component {...pageProps} />
+        <RecoilRoot>
+          <Component {...pageProps} />
+        </RecoilRoot>
       </ThemeProvider>
     </>
   )

@@ -9,6 +9,11 @@ import {
   Bar,
 } from 'recharts'
 
+interface UserData {
+  name: string
+  student: number
+  fees: number
+}
 const pdata = [
   {
     name: 'Python',

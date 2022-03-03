@@ -10,16 +10,14 @@ import {
   MailIcon,
   UserCircleIcon,
 } from '@heroicons/react/solid'
-import { ArrowSmUpIcon, ArrowSmDownIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 
-const Account = ({ children }) => {
+const Account = ({ children }: any) => {
   const router = useRouter()
 
   let heading
-  if (router.pathname === '/account/overview') heading = 'Account Overview'
-  if (router.pathname === '/account/settings') heading = 'Account Setting'
+  if (router.pathname === '/account/overview') heading = 'Profile'
+  if (router.pathname === '/account/settings') heading = 'Settings'
   if (router.pathname === '/account/security') heading = 'Security'
   if (router.pathname === '/account/billing') heading = 'Billing'
   if (router.pathname === '/account/logs') heading = 'Logs'
@@ -32,7 +30,13 @@ const Account = ({ children }) => {
       <div className="bg-[#f7f7f7] dark:bg-darkBlue">
         <Header />
 
-        <Toolbar title={heading} />
+        <Toolbar
+          title={heading}
+          needPath={true}
+          pathLocation={'/'}
+          pathName={'Home'}
+          subPath={['Account', heading]}
+        />
         <section className="bg-white dark:bg-darkBg">
           <main className="mx-auto max-w-6xl space-y-8 px-4 py-6 lg:px-8">
             <div className="space-y-8 rounded-lg border bg-gray-50 px-6 pt-6 dark:border-borderBlue dark:bg-darkBg-sec">
@@ -91,12 +95,6 @@ const Account = ({ children }) => {
                     </div>
                     <div>
                       <div className="flex items-center space-x-2 text-xs font-medium">
-                        <button className="rounded-lg bg-gray-100 px-3 py-2 text-gray-600 duration-200 hover:bg-gray-200 hover:text-gray-800 dark:text-platfawmBlueLight-teriary">
-                          Follow
-                        </button>
-                        <button className="rounded-lg bg-blue-400 px-3 py-2 text-white duration-200 hover:bg-blue-500 hover:text-white">
-                          Hire Me
-                        </button>
                         <button className="rounded-lg bg-gray-100 px-2 py-2 text-gray-600 duration-200 hover:bg-gray-200 hover:text-gray-800">
                           <DotsHorizontalIcon className="h-4 w-4" />
                         </button>
@@ -104,43 +102,6 @@ const Account = ({ children }) => {
                     </div>
                   </div>
                   <div className="flex flex-col justify-between space-y-4 lg:flex-row lg:items-center lg:space-y-0">
-                    <div>
-                      <div className="flex flex-col space-x-0 space-y-2 xs:flex-row xs:items-center xs:space-y-0 xs:space-x-6">
-                        <div className="w-fit rounded-lg border border-dashed px-2 py-1 xs:w-auto sm:px-3 sm:py-2">
-                          <div className="flex items-center space-x-1">
-                            <ArrowSmUpIcon className="h-5 w-5 text-blue-400" />
-                            <span className="text-base font-semibold sm:text-lg">
-                              $4,500
-                            </span>
-                          </div>
-                          <div className="ml-2 text-xs font-medium text-gray-400">
-                            Earnings
-                          </div>
-                        </div>
-                        <div className="w-fit rounded-lg border border-dashed px-2 py-1 xs:w-auto sm:px-3 sm:py-2">
-                          <div className="flex items-center space-x-1">
-                            <ArrowSmDownIcon className="h-5 w-5 text-red-400" />
-                            <span className="text-base font-semibold sm:text-lg">
-                              75
-                            </span>
-                          </div>
-                          <div className="ml-2 text-xs font-medium text-gray-400">
-                            Projects
-                          </div>
-                        </div>
-                        <div className="w-fit rounded-lg border border-dashed px-2 py-1 xs:w-auto sm:px-3 sm:py-2">
-                          <div className="flex items-center space-x-1">
-                            <ArrowSmUpIcon className="h-5 w-5 text-blue-400" />
-                            <span className="text-base font-semibold sm:text-lg">
-                              60%
-                            </span>
-                          </div>
-                          <div className="ml-2 text-xs font-medium text-gray-400">
-                            Success Rate
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div>
                       <div className="w-48 xs:w-60">
                         <div className="flex items-center justify-between text-xs font-semibold">
@@ -204,7 +165,7 @@ const Account = ({ children }) => {
                         : ' '
                     }`}
                     onClick={() => router.push('/account/logs')}
-                    settings
+                    // settings
                   >
                     Logs
                   </li>

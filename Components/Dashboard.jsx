@@ -1,7 +1,7 @@
-import TotalOnlineSales from './storeAnalytics/TotalOnlineSales'
-import TotalOnlineVisitors from './storeAnalytics/TotalOnlineVisitors'
+import TotalOnlineSales from './dashboard/TotalOnlineSales'
+import TotalOnlineVisitors from './dashboard/TotalOnlineVisitors'
 
-const AuthAnalytics = () => {
+const Dashboard = () => {
   return (
     <div className="space-y-8 py-6">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -57,4 +57,4 @@ const AuthAnalytics = () => {
   )
 }
 
-export default AuthAnalytics
+export default Dashboard

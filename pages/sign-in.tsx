@@ -16,7 +16,7 @@ const signIn = () => {
             <Aside />
           </div>
           <div className="w-full py-4">
-            <div className="">
+            <div className="mt-16">
               <div className="mx-auto max-w-2xl py-12 lg:max-w-sm">
                 <form action="#" className="px-4">
                   <div className="space-y-2 text-center">
@@ -41,7 +41,6 @@ const signIn = () => {
                       type="email"
                       name="#"
                       id="#"
-                      autoComplete={false}
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
                   </div>
@@ -105,7 +104,7 @@ const signIn = () => {
                   </div>
                 </form>
               </div>
-              <div>
+              <div className="flex flex-col items-center space-y-2">
                 <div className="flex justify-center space-x-4 text-sm font-medium text-gray-400">
                   <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
                     About
@@ -117,6 +116,9 @@ const signIn = () => {
                     Privacy
                   </div>
                 </div>
+                <p className="text-sm font-medium text-gray-400">
+                  © 2022 Platfawm LLC
+                </p>
               </div>
             </div>
           </div>

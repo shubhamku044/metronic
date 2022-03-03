@@ -1,4 +1,4 @@
-const Address = ({ AddressName, primary, line1, line2, line3 }) => {
+const Address = ({ AddressName, primary, line1, line2, line3 }: any) => {
   return (
     <div className="rounded-md border border-dashed bg-blue-50 px-4 py-4 dark:bg-darkBg-tert">
       <div className="flex items-center space-x-2 text-sm font-semibold">

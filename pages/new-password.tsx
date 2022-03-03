@@ -1,6 +1,4 @@
 import Aside from '../Components/Aside'
-import Link from 'next/link'
-import Image from 'next/image'
 import Head from 'next/head'
 
 const newPassword = () => {
@@ -15,7 +13,7 @@ const newPassword = () => {
           <div className="lg:w-[51rem] xl:w-[61rem]">
             <Aside />
           </div>
-          <div className="w-full bg-white py-4 dark:bg-darkBg">
+          <div className="mt-6 w-full bg-white py-4 dark:bg-darkBg">
             <div className="">
               <div className="mx-auto max-w-2xl py-12 lg:max-w-sm">
                 <form action="#" className="px-4">
@@ -45,6 +43,18 @@ const newPassword = () => {
                       id="#"
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
+                    <div>
+                      <div className="-mt-1 grid w-full grid-cols-4 gap-2">
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                        <div className="h-[6px] rounded-full bg-gray-300"></div>
+                      </div>
+                      <p className="mt-1 text-xs text-gray-400">
+                        Use 8 or more characters with a mix of letters, numbers
+                        & symbols.
+                      </p>
+                    </div>
                   </div>
                   <div className="mt-10 flex flex-col space-y-2">
                     <div className="flex justify-between text-xs font-semibold tracking-wide">
@@ -72,23 +82,28 @@ const newPassword = () => {
                     </div>
                   </div>
                   <div className="mt-6 space-y-4">
-                    <button className="block w-full rounded bg-[#29C7A6] py-2 text-sm font-medium text-white duration-200 hover:bg-[#28C6FF]">
+                    <button className="block w-full rounded bg-[#28C6FF] py-2 text-sm font-medium text-white duration-200 hover:bg-[#29C7A6]">
                       Submit
                     </button>
                   </div>
                 </form>
               </div>
-              <div className="lg:mt-28">
-                <div className="flex justify-center space-x-4 text-sm font-medium text-gray-400">
-                  <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    About
+              <div className="lg:mt-12">
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="flex justify-center space-x-4 text-sm font-medium text-gray-400">
+                    <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
+                      About
+                    </div>
+                    <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
+                      Support
+                    </div>
+                    <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
+                      Privacy
+                    </div>
                   </div>
-                  <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Support
-                  </div>
-                  <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Privacy
-                  </div>
+                  <p className="text-sm font-medium text-gray-400">
+                    © 2022 Platfawm LLC
+                  </p>
                 </div>
               </div>
             </div>

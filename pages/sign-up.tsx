@@ -62,7 +62,6 @@ const signUp = () => {
                       type="email"
                       name="#"
                       id="#"
-                      autoComplete={false}
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
                   </div>
@@ -77,7 +76,6 @@ const signUp = () => {
                       type="email"
                       name="#"
                       id="#"
-                      autoComplete={false}
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
                   </div>
@@ -92,7 +90,6 @@ const signUp = () => {
                       type="email"
                       name="#"
                       id="#"
-                      autoComplete={false}
                       className="rounded bg-slate-100 px-4 py-3 text-sm tracking-wide text-gray-600 focus:bg-slate-200 focus:outline-none"
                     />
                   </div>
@@ -152,16 +149,21 @@ const signUp = () => {
                 </form>
               </div>
               <div>
-                <div className="flex justify-center space-x-4 text-sm font-medium text-gray-400">
-                  <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    About
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="flex justify-center space-x-4 text-sm font-medium text-gray-400">
+                    <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
+                      About
+                    </div>
+                    <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
+                      Support
+                    </div>
+                    <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
+                      Privacy
+                    </div>
                   </div>
-                  <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Support
-                  </div>
-                  <div className="cursor-pointer duration-200 hover:text-[#28C6FF]">
-                    Privacy
-                  </div>
+                  <p className="text-sm font-medium text-gray-400">
+                    © 2022 Platfawm LLC
+                  </p>
                 </div>
               </div>
             </div>
